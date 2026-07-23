@@ -53,16 +53,56 @@ To address these challenges, I built an Active Directory laboratory that demonst
 
 ## 🖥️ Lab Environment
 
-| Component | Technology |
-|----------|------------|
-| Host OS | Ubuntu 24.04.4 LTS |
-| Virtualization | VMware Workstation 17.6.4 |
-| Server OS | Windows Server 2025 |
-| Client OS | Windows 10, Windows 11 |
-| Domain | crop.trinix.local |
-| Network | VMware VMnet |
-| Firewall | Sophos Firewall |
+### Host System
+
+| Component | Details |
+|----------|---------|
+| Host Operating System | Ubuntu 24.04.4 LTS |
+| Processor | Intel Core i5-1135G7 (11th Gen) |
+| Memory | 30 GB RAM |
+| Storage | 476 GB NVMe SSD |
+| Virtualization Platform | VMware Workstation 17.6.4 |
+
+---
+
+### Virtual Machines
+
+| Virtual Machine | Operating System | Purpose |
+|----------------|------------------|----------|
+| WSUS-TG01 | Windows Server 2025 | Domain Controller, DNS, Active Directory |
+| Windows 10 Client | Windows 10 | Domain Joined Client |
+| Windows 11 Client | Windows 11 | Domain Joined Client |
+| Sophos Firewall | Sophos Firewall | DHCP, Network Security, Routing |
+
+---
+
+### Domain Information
+
+| Setting | Value |
+|---------|-------|
+| Domain Name | crop.trinix.local |
+| Directory Service | Active Directory Domain Services (AD DS) |
 | DNS | Active Directory Integrated DNS |
+| Authentication | Domain-Based Authentication |
+
+---
+
+### Group Policies Tested
+
+- USB Device Restriction
+- Hide Drives
+- Disable Control Panel
+- Windows Update Policy
+
+---
+
+### Management Tools
+
+- Active Directory Users and Computers
+- Group Policy Management
+- DNS Manager
+- Server Manager
+- VMware Workstation
 
 ---
 
