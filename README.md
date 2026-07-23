@@ -59,8 +59,8 @@ To address these challenges, I built an Active Directory laboratory that demonst
 |-----------|---------|
 | Host Operating System | Ubuntu 24.04.4 LTS |
 | Processor | Intel Core i5-1135G7 (11th Gen) |
-| Memory | 30 GB RAM |
-| Storage | 476 GB NVMe SSD |
+| Memory | 32 GB RAM |
+| Storage | 512 GB NVMe SSD |
 | Virtualization Platform | VMware Workstation 17.6.4 |
 
 ---
