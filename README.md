@@ -56,23 +56,23 @@ To address these challenges, I built an Active Directory laboratory that demonst
 ### Host System
 
 | Component | Details |
-|----------|---------|
+|-----------|---------|
 | Host Operating System | Ubuntu 24.04.4 LTS |
 | Processor | Intel Core i5-1135G7 (11th Gen) |
-| Memory | 32 GB RAM |
-| Storage | 512 GB NVMe SSD |
+| Memory | 30 GB RAM |
+| Storage | 476 GB NVMe SSD |
 | Virtualization Platform | VMware Workstation 17.6.4 |
 
 ---
 
 ### Virtual Machines
 
-| Virtual Machine | Operating System | Purpose |
-|----------------|------------------|----------|
-| WSUS-TG01 | Windows Server 2025 | Domain Controller, DNS, Active Directory |
-| Windows 10 Client | Windows 10 | Domain Joined Client |
-| Windows 11 Client | Windows 11 | Domain Joined Client |
-| Sophos Firewall | Sophos Firewall | DHCP, Network Security, Routing |
+| Hostname | Operating System | IP Address | Purpose |
+|----------|------------------|------------|---------|
+| WSUS-TG01 | Windows Server 2025 | 192.168.6.129 | Active Directory, DNS, Domain Controller |
+| Windows 10 Client | Windows 10 | 192.168.6.200 | Domain Joined Client |
+| Windows 11 Client | Windows 11 | 192.168.6.120 | Domain Joined Client |
+| Sophos Firewall | Sophos Firewall | DHCP Server | Network Security & Routing |
 
 ---
 
@@ -103,8 +103,6 @@ To address these challenges, I built an Active Directory laboratory that demonst
 - DNS Manager
 - Server Manager
 - VMware Workstation
-
----
 
 ## ⚙️ Technologies Used
 
